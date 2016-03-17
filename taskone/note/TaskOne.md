@@ -88,7 +88,8 @@ HTML5提供了新的语义元素来明确一个Web页面的不同部分:
 
 
 ### 5. ```&nbsp;```的使用
-```&nbsp;```表示空格
+```&nbsp; ```表示空格
+
 
 ### 6. ```placeholder```与```value```的区别
 ```<input type="email" placeholdler="半透明">```的显示效果估下
