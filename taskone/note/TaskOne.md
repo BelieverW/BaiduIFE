@@ -46,22 +46,24 @@ This file is created by Marboo<http://marboo.io> template file $MARBOO_HOME/.med
 
 ### 3.```<figcaption>```标签的使用
 想要出现如下的效果，即让图片带上标签```山本美月prpr```
+
 <div align = center>
 	<figure>
 		<figcaption>山本美月prpr</figcaption>
 		<img src="TaskOnePic1.jpg" alt="山本美月prpr"/ width=400 height=500>
 	</figure>
 </div>
-源代码如下，其中```<div align = center></div>```起到的作用是使图片居中的作用。
-```<figcaption>山本美月prpr</figcaption>```用作文档中插图的图像，带有一个标题：
 
-``` html	
-	<div align = center>
-		<figure>
-			<figcaption>山本美月prpr</figcaption>
-			<img src="TaskOnePic1.jpg" alt="山本美月prpr"/ width=400 height=500>
-		</figure>
-	</div>
+源代码如下，其中```<div align = center></div>```起到的作用是使图片居中的作用。
+``` <figcaption>山本美月prpr</figcaption> ```用作文档中插图的图像，带有一个标题：
+
+``` html
+<div align = center>
+	<figure>
+		<figcaption>山本美月prpr</figcaption>
+		<img src="TaskOnePic1.jpg" alt="山本美月prpr"/ width=400 height=500>
+	</figure>
+</div>
 ```
 
 ### 4. ```<div>,<section>,<article>,<aside>```的使用
@@ -74,8 +76,10 @@ article是一个特殊的section标签，它比section具有更明确的语义, 
 div、section、article，语义是从无到有，逐渐增强的。div无任何语义，仅仅用作样式化或者脚本化的标签，对于一段主题性的内容，则就适用section，而假如这段内容可以脱离上下文，作为完整的独立存在的一段内容，则就适用 article。  
 
 原则上来说，能使用article的时候，也是可以使用section的，但是实际上，假如使用article更合适，那么就不要使用section。
+
 #### html5中的语义元素
 ##### 什么是语义元素?
+
 一个语义元素能够清楚的描述其意义给浏览器和开发者。
 ***无语义*** 元素实例: ```<div>``` 和 ```<span>``` - 无需考虑内容.
 ***语义***元素实例: ```<form>```, ```<table>```, and ```<img>``` - 清楚的定义了它的内容.
