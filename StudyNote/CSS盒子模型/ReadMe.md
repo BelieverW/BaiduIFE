@@ -7,8 +7,7 @@ Author: <TODO: 请写上你的名字>
 This file is created by Marboo<http://marboo.io> template file $MARBOO_HOME/.media/starts/default.md
 本文件由 Marboo<http://marboo.io> 模板文件 $MARBOO_HOME/.media/starts/default.md 创建
 -->
->reference: <http://www.runoob.com/css/css-tutorial.html>
->&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<http://www.jikexueyuan.com/course/164_6.html?ss=1>  
+>reference: <http://www.runoob.com/css/css-tutorial.html> and <http://www.jikexueyuan.com/course/164_6.html?ss=1>  
 
 ## CSS盒子模型概述
 <div align=center>
@@ -60,11 +59,9 @@ CSS盒子模型中，内部红色部分为内容，绿色部分为内边界，�
   
 上面代码的执行效果如下，会在表格内部```<td>```上下左右各填充100px的空余空间。```padding-right```, ```padding-left```, ```padding-top```, ```padding-bottom```具有类似的语义。
     
-<table border="1">
-	<tr>
-		<td style="padding: 100px">内边距</td>
-	</tr>
-</table>
+<div align=center>
+	<img src="img/padding.png" alt="padding">
+</div> 
 
 ### 边框  
 1. CSS边框：  
@@ -118,8 +115,11 @@ p{
 </body>
 </html>  
 ```  
+  
 在网页中显示效果如下：  
-<p style="width:100px; border-top-style:double; border-left-style:dotted; border-right-style:groove; border-bottom-style:solid;">CSS边框测试</p>  
+<div align=center>
+	<img src="img/border1.jpg" alt="border">
+</div> 
 
 #### ```border-width```测试示例：  
 我们在```style.css```中添加代码成如下：  
@@ -134,10 +134,14 @@ p{
     border-bottom-width: 10px;
 }
 ```  
+  
 在网页中显示效果如下：  
-<p style="width:100px; border-top-style:double; border-left-style:dotted; border-right-style:groove; border-bottom-style:solid; border-bottom-width: 10px;">CSS边框测试</p>   
+<div align=center>
+	<img src="img/border2.jpg" alt="border">
+</div>  
 
-#### 其他一些测试示例： 
+#### 其他一些测试示例：  
+ 
 ``` css  
 p{
     width: 200px;
@@ -147,9 +151,12 @@ p{
     border: 2px solid red;
     box-shadow: 10px 10px 5px chartreuse;
 }
-```   
+```  
+   
 效果如下：  
-<p style="width:200px; border-radius:10px; background-color:aqua; text-align:center; border: 2px solid red; box-shadow: 10px 10px 10px chartreuse;">CSS边框测试</p> 
+<div align=center>
+	<img src="img/border3.jpg" alt="border">
+</div> 
   
 其中：    
 
@@ -200,6 +207,7 @@ margin可以单独改变元素的上，下，左，右边距。也可以一次�
 ``` css
 body{
 margin: 0px;
+}
 ```  
 显示效果如下：  
 <div align=center>
