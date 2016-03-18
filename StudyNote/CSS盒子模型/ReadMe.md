@@ -47,16 +47,15 @@ CSS盒子模型中，内部红色部分为内容，绿色部分为内边界，�
   </tr>
 </tbody></table>
 
-试例：  
-  
-``` html    
-<table border="1">
-	<tr>
-		<td style="padding: 100px">内边距</td>
-	</tr>
-</table>
+示例：  
+``` html
+	<table border="1">
+		<tr>
+			<td style="padding:100px">内边距</td>
+		</tr>
+	</table>
 ```  
-  
+
 上面代码的执行效果如下，会在表格内部```<td>```上下左右各填充100px的空余空间。```padding-right```, ```padding-left```, ```padding-top```, ```padding-bottom```具有类似的语义。
     
 <div align=center>
