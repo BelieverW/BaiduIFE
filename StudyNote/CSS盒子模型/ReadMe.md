@@ -47,16 +47,15 @@ CSS盒子模型中，内部红色部分为内容，绿色部分为内边界，�
   </tr>
 </tbody></table>
 
-试例：  
-  
-``` html    
-<table border="1">
-	<tr>
-		<td style="padding: 100px">内边距</td>
-	</tr>
-</table>
+示例：  
+``` html
+	<table border="1">
+		<tr>
+			<td style="padding:100px">内边距</td>
+		</tr>
+	</table>
 ```  
-  
+
 上面代码的执行效果如下，会在表格内部```<td>```上下左右各填充100px的空余空间。```padding-right```, ```padding-left```, ```padding-top```, ```padding-bottom```具有类似的语义。
     
 <div align=center>
@@ -197,6 +196,7 @@ margin可以单独改变元素的上，下，左，右边距。也可以一次�
     <td>margin-top</td>
     <td>设置元素的上外边距。</td>
   </tr>
+<<<<<<< HEAD
 </tbody></table> 
 
 如下图所示，css代码中为设计```body```的```margin```时，html代码中```<div>```所包裹的部分无法覆盖整个浏览器。这就是body的外边距。  
@@ -379,4 +379,136 @@ merge合并所遵循是多的那一部分。
 
  
 
+
+=======
+</tbody></table> 
+
+如下图所示，css代码中为设计```body```的```margin```时，html代码中```<div>```所包裹的部分无法覆盖整个浏览器。这就是body的外边距。  
+<div align=center>
+	<img src="img/marginsample1.png" alt="marginsample" width=300 height=200>
+</div>    
+当在css中添加如下代码时：  
+``` css
+body{
+margin: 0px;
+}
+```  
+显示效果如下：  
+<div align=center>
+	<img src="img/marginsample2.png" alt="marginsample" width=300 height=200>
+</div>   
+
+### 盒子模型设计综述  
+盒子模型在html中用```<div>```来表示，如下：
+    
+``` html  
+    <div class="container">
+        <div class="bd">
+            <div class="pd">
+                <div class="content">
+                    CSS盒子模型
+                </div>
+            </div>
+        </div>
+    </div>  
+```  
+在css用代码如下：  
+     
+``` css  
+body{
+    margin: 0px;
+}
+.container{
+    margin: 10px;
+}
+.bd{
+    border-style: dotted;
+    border-color: #ffccff;
+}
+.pd{
+    padding:10px;
+}
+.content{
+    background-color: green;
+    text-align: center;
+    color: red;
+}    
+```  
+最后显示效果如下：  
+<div align=center>
+	<img src="img/sum.jpg" alt="sum">
+</div>  
+
+### 外边距合并  
+外边距合并就是一个叠加的概念  
+<div align=center>
+	<img src="img/marginmerge.png" alt="sum">
+</div> 
+两个盒子会自动合并。  
+
+``` html  
+    <div class="container">
+        <div class="bd">
+            <div class="pd">
+                <div class="content">
+                    CSS盒子模型
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="bd2">
+            <div class="pd2">
+                <div class="content2">
+                    CSS盒子模型2
+                </div>
+            </div>
+        </div>
+    </div>
+```
+
+```css 
+body{
+    margin: 0px;
+}
+.container{
+     margin: 100px;
+ }
+.bd{
+    border-style: dotted;
+    border-color: #ffccff;
+}
+.pd{
+    padding:10px;
+}
+.content{
+    background-color: green;
+    text-align: center;
+    color: red;
+}
+.container2{
+    margin: 100px;
+}
+.bd2{
+    border-style: dotted;
+    border-color: #ffccff;
+}
+.pd2{
+    padding:10px;
+}
+.content2{
+    background-color: green;
+    text-align: center;
+    color: red;
+} 
+```
+显示效果如下：  
+<div align=center>
+	<img src="img/merge1.jpg" alt="merge1">
+</div>   
+如果改变```.container{}```中```margin```的值为```50px```，则显示效果如下：  
+<div align=center>
+	<img src="img/merge2.jpg" alt="merge2">
+</div>   
+merge合并所遵循是多的那一部分。
 
