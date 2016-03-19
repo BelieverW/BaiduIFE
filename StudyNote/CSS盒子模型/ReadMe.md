@@ -511,4 +511,87 @@ body{
 	<img src="img/merge2.jpg" alt="merge2">
 </div>   
 merge合并所遵循是多的那一部分。
+  
+### ```display```属性
+display有三种，```block```, ```inline```和```inline-block```。
+
+我们知道，在html中，```<div>```是块属性，```<span>```是内联属性。他们之间的区别可以用下面的代码来表示：  
+
+``` html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            background-color: aqua;
+        }
+        span{
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <div>div元素</div>
+    <div>div元素</div>
+    <br>
+    <span>span元素</span>
+    <span>span元素</span>
+</body>
+</html>
+```  
+其显示效果为：  
+<div align=center>
+	<img src="img/inlineandblock.png" alt="inlineandblock">
+</div>  
+我们可以看出```<div>```可以贯穿整个浏览器，而```<span>```只能包裹其内容。```<div>```实际对应的是```display```的```block```属性，而```<span>```对应的是```display```的```inline```属性。
+  
+通过在```<style>```中做如下改动可以是```<div>```和```<span>```的显示效果对换。
+  
+```html
+	<style>
+        div{
+            background-color: aqua;
+            display: inline
+        }
+        span{
+            background-color: greenyellow;
+            display: block
+        }
+    </style>
+```  
+  
+显示效果如下：    
+<div align=center>
+	<img src="img/inlineandblock2.jpg" alt="inlineandblock">
+</div> 
+ 
+####  ```inline```和```inline-block```
+```inline```只能包裹其内容，而无法设定```width```和```height```的值。而```inline-block```可以做到。
+
+``` html
+    <style>
+        div{
+            background-color: aqua;
+            display: inline-block;
+            width: 300px;
+        }
+        span{
+            background-color: greenyellow;
+            display: inline;
+            width: 300px
+        }
+    </style>
+```  
+上面这段代码的显示效果如下：  
+<div align=center>
+	<img src="img/inlineandblock3.jpg" alt="inlineandblock">
+</div>  
+
+``` html
+
+``` 
+  
+
 
