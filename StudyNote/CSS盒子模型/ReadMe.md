@@ -328,4 +328,55 @@ body{
 </div>   
 merge合并所遵循是多的那一部分。
 
+### CSS3中盒子的类型
+```<div>```属于block，```<span>```属于inline，他们的显示效果如下，其中```<div>```占据两行属性，```<span>```为内联元素，占据一行。
+<div align=center>
+	<img src="img/inlineandblock.png" alt="inlineandblock">
+</div>  
+通过在```<style>```中定义```display```可以改变其显示属性，代码如下：  
+
+``` html
+    <style>
+        div{
+            background-color: aqua;
+            display: inline;
+        }
+        span{
+            background-color: greenyellow;
+            display: block;
+        }
+    </style>
+```  
+显示效果如下：  
+<div align=center>
+	<img src="img/inlineandblock2.jpg" alt="inlineandblock">
+</div>  
+
+#### ```inline-block```属性  
+```inline-block```与```inline```具有相同的显示类型，<font color=red>**那么为什么要出现```inline-block```类型呢？**</font>  
+```inline```不能改变宽度和高度，但```inline-block```可以设置宽度和高度。如下，我们设置```inline-block```和```inline```的```width```属性都为```300px```，代码如下：  
+
+``` html
+    <style>
+        div{
+            background-color: aqua;
+            display: inline-block;
+            width: 300px;
+        }
+        span{
+            background-color: greenyellow;
+            display: inline;
+            width: 300px
+        }
+    </style>
+```  
+
+显示效果如下：  
+<div align=center>
+	<img src="img/inlineandblock3.jpg" alt="inlineandblock">
+</div>  
+
+
+ 
+
 
